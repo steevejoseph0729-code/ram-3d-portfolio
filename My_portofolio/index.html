@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <meta name="description" content="Ram's 3D animated Data Science portfolio">
+  <title>Ram | 3D Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="background-glow"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <a class="logo" href="#home">RAM<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> FUTURE DATA SCIENTIST</p>
+        <h1>HELLO, I'm <span class="gradient-text">RAMA CHANDRA VARMA</span></h1>
+        <h2>B.Tech Student <span class="typewriter">| Data Science</span></h2>
+        <p class="hero-description">
+          I'm a second-year Data Science student at AITS Tirupati,
+          learning to turn data and code into creative, useful solutions.
+          Explore my projects, skills and journey in technology.
+        </p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">Explore Projects ↗</a>
+          <a class="button button-outline" href="#contact">Let's Connect</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>02+</strong><span>Projects</span></div>
+          <div><strong>DS</strong><span>My Track</span></div>
+          <div><strong>∞</strong><span>Learning</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="heroVisual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+
+        <div class="profile-frame">
+          <div class="profile-image-wrap">
+            <img src="profile.png.jpg" alt="My profile photo" class="profile-image"
+                 onerror="this.style.display='none';
+                 this.nextElementSibling.style.display='flex';">
+            <div class="photo-placeholder">
+              <span>RAM</span>
+              <small>Add my-photo.jpg</small>
+            </div>
+          </div>
+          <span class="frame-corner corner-tl"></span>
+          <span class="frame-corner corner-tr"></span>
+          <span class="frame-corner corner-bl"></span>
+          <span class="frame-corner corner-br"></span>
+        </div>
+
+        <div class="floating-label label-python"><span>⌘</span> Python</div>
+        <div class="floating-label label-data"><span>◈</span> Data Science</div>
+        <div class="floating-label label-java"><span>☕</span> Java</div>
+        <div class="visual-caption">BUILDING • LEARNING • CREATING</div>
+      </div>
+    </section>
+
+    <section class="cube-section section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">EXPLORE MY WORLD</p>
+        <h2>The <span class="gradient-text">Data Dimension</span></h2>
+        <p>A little 3D representation of the technologies I'm exploring.</p>
+      </div>
+
+      <div class="cube-stage reveal" id="cubeStage">
+        <div class="cube-shadow"></div>
+        <div class="cube" id="dataCube" aria-label="Rotating Data Science cube">
+          <div class="cube-face front"><span>DATA</span><small>Find the signal</small></div>
+          <div class="cube-face back"><span>AI</span><small>Imagine what's next</small></div>
+          <div class="cube-face right"><span>PYTHON</span><small>Code with purpose</small></div>
+          <div class="cube-face left"><span>JAVA</span><small>Build the logic</small></div>
+          <div class="cube-face top"><span>ANALYZE</span></div>
+          <div class="cube-face bottom"><span>CREATE</span></div>
+        </div>
+        <p class="cube-hint">MOVE YOUR MOUSE TO INTERACT</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curious Mind. <span class="gradient-text">Big Goals.</span></h2>
+      </div>
+      <div class="about-card glass-card reveal">
+        <div class="about-mark">R<span>.</span></div>
+        <div>
+          <h3>Hello, I'm RAMA CHANDRA VARMA</h3>
+          <p>
+            I'm pursuing my B.Tech in Data Science at AITS Tirupati.
+            I'm building my foundation in programming, data analysis
+            and web development while creating projects that help me
+            learn through practice.
+          </p>
+          <p>
+            My goal is to grow into a capable Data Science professional,
+            develop real-world skills and keep building a portfolio
+            that reflects my progress.
+          </p>
+          <div class="about-tags">
+            <span>Problem Solving</span><span>Continuous Learning</span>
+            <span>Project Building</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY TOOLKIT</p>
+        <h2>Skills I'm <span class="gradient-text">Developing</span></h2>
+        <p>Growing my technical foundation one project at a time.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card glass-card reveal"><span class="skill-icon">Py</span><h3>Python</h3><p>Programming fundamentals</p><div class="skill-line"><i style="--level:75%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">J</span><h3>Java</h3><p>OOP and core concepts</p><div class="skill-line"><i style="--level:65%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">⌘</span><h3>HTML & CSS</h3><p>Responsive web pages</p><div class="skill-line"><i style="--level:70%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive web basics</p><div class="skill-line"><i style="--level:45%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">Np</span><h3>NumPy</h3><p>Numerical computing</p><div class="skill-line"><i style="--level:40%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">Pd</span><h3>Pandas</h3><p>Data manipulation</p><div class="skill-line"><i style="--level:40%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">GH</span><h3>Git & GitHub</h3><p>Version control and projects</p><div class="skill-line"><i style="--level:60%"></i></div></article>
+        <article class="skill-card glass-card reveal"><span class="skill-icon">DS</span><h3>Data Science</h3><p>Learning analytics and ML</p><div class="skill-line"><i style="--level:35%"></i></div></article>
+      </div>
+      <p class="skill-note">Progress indicators are illustrative and represent my learning journey, not formal proficiency ratings.</p>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THINGS I'VE BUILT</p>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>Small steps, practical learning, continuous improvement.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal">
+          <div class="project-art hangman-art"><span>H</span><i>?</i><b>_ _ _ _ _</b></div>
+          <div class="project-meta"><span>PYTHON</span><span>01 / GAME</span></div>
+          <h3>Hangman Game</h3>
+          <p>A word-guessing game built to practise Python programming and game logic.</p>
+          <a class="project-link" href="https://github.com/steevejoseph0729-code/Hangman-Game" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a>
+        </article>
+        <article class="project-card glass-card reveal">
+          <div class="project-art robot-art"><span>╭─╮</span><i>◉</i><b>ROBOT ARM</b></div>
+          <div class="project-meta"><span>PYTHON</span><span>02 / SIMULATION</span></div>
+          <h3>Robotic Arm Project</h3>
+          <p>A graphical robotic arm project exploring movement, angles and simulation.</p>
+          <a class="project-link" href="https://github.com/steevejoseph0729-code/robotic-arm-project" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-box glass-card reveal">
+        <p class="eyebrow">YOUR NEXT COLLABORATOR?</p>
+        <h2>Let's build something <span class="gradient-text">great.</span></h2>
+        <p>Connect with me to follow my projects, learning journey and future work.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="https://www.linkedin.com/in/yammani-rama-chandra-varma-176699407" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
+          <a class="button button-outline" href="https://github.com/steevejoseph0729-code" target="_blank" rel="noopener noreferrer">Explore GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#home">RAM<span>.</span></a><p>Designed with curiosity and a little neon.</p><span>© <span id="year">2026</span> Rama Chandra Varma</span></footer>
+</body>
+</html>
